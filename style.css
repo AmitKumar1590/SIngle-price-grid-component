@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Karla", sans-serif;
+}
+
+.gridcontainer {
+    max-width: 300px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.box1 {
+    background-color: #fff;
+}
+
+.box2 {
+    background-color: hsl(179, 62%, 43%);
+    color: rgb(239, 222, 222);
+}
+
+.box3 {
+    background-color: #4ABEBD;
+}
+
+.box {
+    padding: 1.2rem;
+
+}
+
+.box1 h3 {
+    color: #4ABEBD;
+}
+
+.box1 :nth-child(2) {
+    color: rgb(236, 244, 14);
+}
+
+.box1 :nth-child(3) {
+    color: rgb(204, 215, 215);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box .price p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.box2 span {
+    font-size: 16px;
+    color: rgb(204, 215, 215);
+}
+
+.box2 button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-family: inherit;
+    border: none;
+    color: white;
+    font-size: 1em;
+
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(191, 223, 50);
+}
+
+.box3 h3 {
+    color: rgb(239, 222, 222);
+}
+
+.box3 p {
+    margin: 1px;
+    color: #a7e1e4;
+}
+
+@media (min-width:700px) {
+  .gridcontainer{
+    width: 40rem;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+}
+  .box1{
+    grid-column: 1;
+    grid-column-end: 3;
+  }
+  .box1{
+    width: 700px;
+  }
+}
